@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Network Requests Management Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project provides a custom React hook for managing network requests. It handles API calls with features like error handling, loading state management, and refetching. The hook is written in TypeScript and utilizes library Axios.
+
+## Installation
+To install the project dependencies, run the following command:
+
+`npm install`
+
+## Usage
+1. Import the custom hook `useAxios` from the `useAxios` module.
+2. Use the `useAxios` hook in your React components to make network requests.
+3. Pass the API endpoint URL to the `useAxios` hook to send requests.
+4. The hook returns an object containing the response data, loading state, and error information.
+5. You can trigger a refetch of the API request by calling the `refetch` function returned by the hook.
 
 ## Available Scripts
 
@@ -14,33 +26,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npx cypress open`
 
-### `npm run build`
+To run the Cypress tests locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Make sure your development server is running (npm start).
+2. Open a new terminal window and navigate to the project directory.
+3. Run `npx cypress open` to launch the Cypress Test Runner.
+4. Click on the test file (*.spec.ts or *.spec.js) you want to run.
+5. Cypress will open a browser window and execute the tests, providing real-time feedback on the results.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
